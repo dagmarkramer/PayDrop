@@ -88,13 +88,13 @@ class _HomePageAlt1CopyWidgetState extends State<HomePageAlt1CopyWidget>
             await showModalBottomSheet(
               isScrollControlled: true,
               backgroundColor: Colors.transparent,
-              enableDrag: false,
+              useSafeArea: true,
               context: context,
               builder: (context) {
                 return Padding(
                   padding: MediaQuery.viewInsetsOf(context),
                   child: Container(
-                    height: 700.0,
+                    height: double.infinity,
                     child: PaymentrequestWidget(),
                   ),
                 );
